@@ -1,1 +1,3 @@
-# FSWD-Django-Jul-2026-AM
+## Django documentation
+
+[Django](https://docs.djangoproject.com/en/6.0/)
