@@ -112,3 +112,73 @@ http://127.0.0.1:8000/
 If you see the Django welcome page, your project is working.
 
 ---
+
+
+# Part 3 — Create Basic Pages
+
+At first, we will create simple pages using Django views.
+
+## Step 8. Create `views.py`
+
+Inside this folder:
+
+```text
+myproject/myproject/
+```
+
+Create a new file called:
+
+```text
+views.py
+```
+
+Add this code:
+
+```python
+from django.http import HttpResponse
+
+
+def homepage(request):
+    return HttpResponse("Welcome to JobZila Home Page")
+
+
+def contact(request):
+    return HttpResponse("Contact JobZila")
+```
+
+---
+
+## Step 9. Connect views to URLs
+
+Open:
+
+```text
+myproject/myproject/urls.py
+```
+
+Update it:
+
+```python
+from django.contrib import admin
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path("admin/", admin.site.urls),
+    path("", views.homepage),
+    path("contact/", views.contact),
+]
+```
+
+Test these URLs:
+
+```text
+http://127.0.0.1:8000/
+http://127.0.0.1:8000/contact/
+```
+
+At this point, Django is sending plain text responses.
+
+---
+
+
