@@ -1,0 +1,16 @@
+{% extends 'sharedpage.html' %}
+
+{% block title %}Register | JobZila{% endblock title %}
+
+{% block main %}
+<main>
+    <section class="card">
+        <h2>Create Account</h2>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Register</button>
+        </form>
+    </section>
+</main>
+{% endblock main %}

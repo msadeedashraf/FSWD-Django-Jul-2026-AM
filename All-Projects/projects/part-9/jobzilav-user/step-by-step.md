@@ -74,13 +74,19 @@ from django.contrib import admin
 from django.urls import path, include
 from . import views
 
+
+
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", views.homepage),
-    path("contact/", views.contact),
+    path("", views.home, name="home"),
     path("jobs/", include("jobs.urls")),
+    path("blogs/", include("blogs.urls")),
+    path("terms/", views.terms, name="terms"),
+    path("privacy/", views.privacy, name="privacy"),
+    path("contact/", views.contact, name="contact"),
     path("users/", include("users.urls")),
 ]
+
 ```
 
 ---
@@ -205,4 +211,86 @@ Test:
 ```text
 http://127.0.0.1:8000/users/register/
 http://127.0.0.1:8000/users/login/
+```
+
+- Add this to the shared.html
+
+```html
+ {% if user.is_authenticated %}
+        <a href="">Add Job</a> |
+        <form method="POST" action="{% url 'users:logout' %}" style="display:inline;">
+            {% csrf_token %}
+            <button type="submit">Logout</button>
+        </form>
+    {% else %}
+        <a href="{% url 'users:register' %}">Register</a> |
+        <a href="{% url 'users:login' %}">Login</a>
+    {% endif %}
+```
+
+
+```html
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}JobZila{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+  </head>
+  <body>
+    <header>
+      <h1>JobZila</h1>
+
+      <nav class="navbar">
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="main-menu"
+        >
+          ☰
+        </button>
+
+        <ul id="main-menu" class="nav-menu">
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="{% url 'jobs:job_list' %}">Find Jobs</a></li>
+          <li><a href="{% url 'blogs:blogs' %}">Blogs</a></li>
+          <li><a href="{% url 'terms' %}">Terms of Service</a></li>
+          <li><a href="{% url 'privacy' %}">Privacy Policy</a></li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+
+          {% if user.is_authenticated %}
+        <a href="">Add Job</a> |
+        <form method="POST" action="{% url 'users:logout' %}" style="display:inline;">
+            {% csrf_token %}
+            <button type="submit">Logout</button>
+        </form>
+    {% else %}
+        <a href="{% url 'users:register' %}">Register</a> |
+        <a href="{% url 'users:login' %}">Login</a>
+    {% endif %}
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      {% block main %}{% endblock main %}
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2026 JobZila. All rights reserved.
+        <a href="{% url 'contact' %}">Contact Us</a> |
+        <a href="{% url 'terms' %}">Terms</a> |
+        <a href="{% url 'privacy' %}">Privacy</a>
+      </p>
+    </footer>
+
+    <script src="{% static 'js/menu.js' %}"></script>
+  </body>
+</html>
+
 ```
