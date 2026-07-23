@@ -3,14 +3,29 @@
 {% block title %}Login | JobZila{% endblock title %}
 
 {% block main %}
-<main>
-    <section class="card">
+<section class="auth-section">
+    <div class="auth-card">
         <h2>Login</h2>
-        <form method="POST">
+
+        <p class="auth-intro">
+            Sign in to manage jobs and access your account.
+        </p>
+
+        <form method="POST" class="auth-form">
             {% csrf_token %}
             {{ form.as_p }}
-            <button type="submit">Login</button>
+
+            <button type="submit">
+                Login
+            </button>
         </form>
-    </section>
-</main>
+
+        <p class="auth-footer">
+            Do not have an account?
+            <a href="{% url 'users:register' %}">
+                Create one
+            </a>
+        </p>
+    </div>
+</section>
 {% endblock main %}
