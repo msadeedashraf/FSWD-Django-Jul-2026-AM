@@ -519,6 +519,18 @@ Delete {{ job.title }} | JobZila
 
 ## Step : 7 Add the link job details link on the job_list.html
 
+- add the link 
+  
+```html
+<a
+                    
+                    class="view-job-link"
+                    href="{% url 'jobs:job_detail' job.id %}"
+                >
+                    View Job Details
+                </a>
+```
+
 ```python 
 {% extends "sharedpage.html" %}
 
