@@ -51,25 +51,25 @@
             </a>
         {% endif %}
 
-        {% if user == blog.author %}
-            <div class="job-management-actions">
+       {% if user.is_authenticated and user.username == blog.author %}
+    <div class="job-management-actions">
 
-                <a
-                    href=""
-                    class="edit-job-link"
-                >
-                    Edit Blog
-                </a>
+        <a
+            href="{% url 'blogs:edit_blog' blog.id %}"
+            class="edit-job-link"
+        >
+            Edit Blog
+        </a>
 
-                <a
-                    href=""
-                    class="delete-job-link"
-                >
-                    Delete Blog
-                </a>
+        <a
+            href="{% url 'blogs:delete_blog' blog.id %}"
+            class="delete-job-link"
+        >
+            Delete Blog
+        </a>
 
-            </div>
-        {% endif %}
+    </div>
+{% endif %}
 
         <p class="back-to-jobs">
             <a href="{% url 'blogs:blog' %}">
