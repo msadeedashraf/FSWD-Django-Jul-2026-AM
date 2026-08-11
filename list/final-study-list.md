@@ -11,13 +11,12 @@
 [Python object-oriented programming](https://www.linkedin.com/learning/python-object-oriented-programming-22888296/python-object-oriented-programming?resume=false&u=76276940)
 
 ### Design Patterns
-[](https://www.linkedin.com/learning/python-design-patterns-24559831?u=76276940)
-[](https://www.linkedin.com/learning/python-advanced-design-patterns-24558937/welcome?u=76276940)
-
+[python-design-patterns](https://www.linkedin.com/learning/python-design-patterns-24559831?u=76276940)
+[python-advanced-design-patterns](https://www.linkedin.com/learning/python-advanced-design-patterns-24558937/welcome?u=76276940)
 
 ### Javascript
 
-[](https://www.linkedin.com/learning/javascript-essential-training/javascript-the-soil-from-which-the-modern-web-grows?u=76276940)
+[javascript-essential-training](https://www.linkedin.com/learning/javascript-essential-training/javascript-the-soil-from-which-the-modern-web-grows?u=76276940)
 
 ### Python
 [Programming Concepts for Python](https://www.linkedin.com/learning/programming-concepts-for-python/programming-concepts-with-python?u=76276940)
@@ -26,7 +25,61 @@
 [Advanced Python](https://www.linkedin.com/learning/advanced-python-23931756/welcome?u=76276940)
 
 
-### Databases
+### REACT 
+
+### Improve Your React Skills
+
+[Improve Your React Skills](https://www.linkedin.com/learning/paths/improve-your-react-skills?u=76276940)
+
+[React: Testing and Debugging](https://www.linkedin.com/learning/react-testing-and-debugging/testing-and-debugging-your-react-apps?u=76276940)
+
+### REACT Boot camp zero-to-hero
+
+[Build Modern Web Apps with React, Hooks, State Management, and APIs Using Vite or Next.js](https://www.linkedin.com/learning/build-modern-web-apps-with-react-hooks-state-management-and-apis-using-vite-or-next-js/react-js-course-trailer?u=76276940)
+
+[Master React 19 and Next.js 16 with Hands-On Projects and Real-World Applications](https://www.linkedin.com/learning/master-react-19-and-next-js-16-with-hands-on-projects-and-real-world-applications/course-introduction?u=76276940)
+
+[Master React 19, Build Ecommerce Solutions, and Prepare for Interviews with TypeScript, Next.js, and Remix](https://www.linkedin.com/learning/master-react-19-build-ecommerce-solutions-and-prepare-for-interviews-with-typescript-next-js-and-remix/course-introduction?u=76276940)
+
+
+### Linux
+
+[Learning Windows Subsystem for Linux](https://www.linkedin.com/learning/learning-windows-subsystem-for-linux-16134127/windows-subsystem-for-linux?u=76276940)
+
+[Learning Linux Command Line](https://www.linkedin.com/learning/learning-linux-command-line-26594217/learning-linux-command-line?u=76276940)
+
+### Explore Web Development
+
+[Explore Web Development with Node.js](https://www.linkedin.com/learning/paths/explore-web-development-with-node-js?u=76276940)
+
+### Databases Learning Path
+
+[Database Foundations: From Concepts to Applications](https://www.linkedin.com/learning/paths/database-foundations-from-concepts-to-applications?u=76276940)
+
+### Database Design
+[End-to-End SQL Database Design and Optimization Project](https://www.linkedin.com/learning/end-to-end-sql-database-design-and-optimization-project/course-overview?u=76276940)
+
+### SQL Server 
+[Microsoft SQL Server 2022 Essential Training](https://www.linkedin.com/learning/microsoft-sql-server-2022-essential-training?u=76276940)
+[Complete Guide to Advanced SQL Server](https://www.linkedin.com/learning/complete-guide-to-advanced-sql-server/dive-deep-into-sql-server?u=76276940)
+
+### Structured Query Language
+
+### TSQL
+[Querying Microsoft SQL Server 2022](https://www.linkedin.com/learning/querying-microsoft-sql-server-2022/turn-data-into-information-with-queries?u=76276940)
+
+
+### Vendor Relational DBs
+
+### Postgre
+
+### NoSQL DBs
+[NoSQL Essential Training](https://www.linkedin.com/learning/nosql-essential-training?u=76276940)
+
+[MongoDB Essential Training](https://www.linkedin.com/learning/mongodb-essential-training/an-introduction-to-mongodb-23754278?contextUrn=urn%3Ali%3AlyndaLearningPath%3A5b32b6d5498e4ef39c04c55c&u=76276940)
+
+### GraphQL
+[GraphQL Essential Training](https://www.linkedin.com/learning/graphql-essential-training-20298359/learn-graphql-essentials?u=76276940)
 
 
 ### JSON
